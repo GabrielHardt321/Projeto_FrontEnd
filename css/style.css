@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --font-main: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-gap: 20px;
+    list-style: none;
+    background: #eee;
+    padding: 1rem;
+}
