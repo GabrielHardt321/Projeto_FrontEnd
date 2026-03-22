@@ -113,6 +113,7 @@ body {
   animation: aparecer 2s;
 }
 
+
 /* Responsividade(Uma das partes mais importantes do projeto ANTEÇÃO!!!) */
 @media (max-width: 768px) {
   .cards {
@@ -124,4 +125,11 @@ body {
     text-align: center;
     padding: 10px;
   }
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
