@@ -13,6 +13,13 @@ body {
   padding: 10px;
 }
 
+.header img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 
 .cards {
   display: grid;
@@ -34,6 +41,13 @@ body {
   transform: translateY(-10px) scale(1.05);
 }
 
+@font-face {
+  font-family: 'evangelion';
+  src: url('../fonts/evangelion.otf') format('opentype');
+}
+.fonteEvangelion {
+  font-family: 'evangelion';
+}
 
 .banner {
   position: relative;
