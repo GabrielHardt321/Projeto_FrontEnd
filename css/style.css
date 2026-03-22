@@ -89,8 +89,15 @@ body {
   animation: aparecer 2s;
 }
 
+/* Responsividade(Uma das partes mais importantes do projeto ANTEÇÃO!!!) */
 @media (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .banner h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
   }
 }
