@@ -11,3 +11,5 @@ Melhorias adicionadas, melhorando os Cards deixando eles mais organizados e estr
 Atualizando a parte da Responsividade, é uma das partes mais importantes do projeto.
 
 Adicionando uma fonte personalizavel e colocando uma imagem na barra de cima que quando clicada, volta para a pagina inicial
+
+colocando imagem dos personagem e colocando nos cards na pag inicial (teste para ver se fica maneiro)
