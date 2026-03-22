@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial;
+  background-color: #111;
 }
 
 
@@ -34,16 +35,47 @@ body {
 
 
 .banner {
-  height: 200px;
+  position: relative;
+  height: 350px;
   background: url('../assets/img/evangelion-unit-01-3840x2160-15699.png') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* overlay escuro */
+.banner::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner h2{
+  position: relative;
+  color: white;
+  font-size: 32px;
+}
+
 .header {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 15px 30px;
   position: sticky;
   top: 0;
+}
+
+.header a{
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.header a:hover{
+  color: purple;
 }
 
 
