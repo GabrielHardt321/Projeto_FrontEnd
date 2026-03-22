@@ -1,26 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --font-main: 'Arial', sans-serif;
-}
-
 body {
-    font-family: var(--font-main);
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-gap: 20px;
-    list-style: none;
-    background: #eee;
-    padding: 1rem;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  background: purple;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+.banner {
+  height: 200px;
+  background: url('../assets/img/evangelion-unit-01-3840x2160-15699.png') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.banner {
+  animation: aparecer 2s;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
