@@ -33,5 +33,46 @@
   </p>
 </section>
 
+<section class="secao-comentarios">
+    <div class="container-form">
+        <h2 class="fonteEvangelion">Avaliação de Personagem</h2>
+        <p>Deixe sua nota e sua opinião sobre o Shinji Ikari abaixo.</p>
+        
+        <form action="#">
+            <div class="campo">
+                <label for="nome">Seu Nome / Usuário:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: u/shinji_fan" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail (fica oculto):</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="nota">Que nota você dá para ele?</label>
+                <select id="nota" name="nota">
+                    <option value="10">10 - Personagem Incrível</option>
+                    <option value="8">8 - Muito bom</option>
+                    <option value="5">5 - Mediano / Ok</option>
+                    <option value="2">2 - Não gosto muito</option>
+                    <option value="0">0 - Entre no robô, Shinji!</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="comentario">Seu comentário:</label>
+                <textarea id="comentario" rows="4" placeholder="Escreva o que você pensa sobre o personagem..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Postar Avaliação</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+  <p>Projeto Evangelion - 2026</p>
+</footer>
+
 </body>
 </html>
