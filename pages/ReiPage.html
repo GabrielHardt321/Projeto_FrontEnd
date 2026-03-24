@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReiPage</title>
+  <meta charset="UTF-8">
+  <title>Shinji Ikari</title>
+
     <link rel="stylesheet" href="../css/pages/ReiPage.css">
 </head>
+
 <body>
-    <h1><img src="" alt=""></h1>
+
+<header class="header">
+    <a href="index.html" class="logo">
+      <img src="../assets/img/logoEvangelion.webp" alt="Home">
+    </a>
+  <nav>
+    <a href="ShinjiPage.html">Shinji</a>
+    <a href="ReiPage.html">Rei</a>
+    <a href="AsukaPage.html">Asuka</a>
+    <a href="KaworuPage.html">Kaworu</a>
+  </nav>
+</header>
+
+<section class="banner rei-banner">
+  <h2>Rei Ayanami</h2>
+</section>
+
+<section class="conteudo">
+  <img src="../assets/img/rei_doomer.png" alt="Rei Ayanami">
+
+<p>
+    Rei Ayanami é uma das protagonistas de Neon Genesis Evangelion. Ela é piloto do EVA-00 e se destaca por sua personalidade calma, silenciosa e misteriosa ao longo da história.
+</p>
+</section>
+
+<section class="secao-comentarios">
+    <div class="container-form">
+        <h2 class="fonteEvangelion">Avaliação de Personagem</h2>
+        <p>Deixe sua nota e sua opinião sobre a Rei Ayanami abaixo.</p>
+        
+        <form action="#">
+            <div class="campo">
+                <label for="nome">Seu Nome / Usuário:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: u/shinji_fan" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail (fica oculto):</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="nota">Que nota você dá para ele?</label>
+                <select id="nota" name="nota">
+                    <option value="10">10 - Personagem Incrível</option>
+                    <option value="8">8 - Muito bom</option>
+                    <option value="5">5 - Mediano / Ok</option>
+                    <option value="2">2 - Não gosto muito</option>
+                    <option value="0">0 - Entre no robô, Shinji!</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="comentario">Seu comentário:</label>
+                <textarea id="comentario" rows="4" placeholder="Escreva o que você pensa sobre o personagem..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Postar Avaliação</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+  <p>Projeto Evangelion - 2026</p>
+</footer>
+
 </body>
 </html>
