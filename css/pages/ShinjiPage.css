@@ -211,22 +211,7 @@ body {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .lista-comentarios {
-        grid-template-columns: 1fr;
-    }
-}
 
-.card-comentario {
-    background: #1a1a1a;
-    border: 1px solid purple;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content:间-between; /* Mantém o conteúdo espalhado */
-    transition: 0.3s;
-}
 
 .card-comentario:hover {
     transform: translateX(10px); /* Animação simples de hover */
