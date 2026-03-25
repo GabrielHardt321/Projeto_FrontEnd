@@ -205,10 +205,10 @@ body {
 }
 
 .lista-comentarios {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .card-comentario {
