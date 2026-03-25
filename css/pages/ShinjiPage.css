@@ -13,6 +13,7 @@ body {
   padding: 15px 30px;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .header img {
