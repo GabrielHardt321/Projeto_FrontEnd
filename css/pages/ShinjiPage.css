@@ -26,6 +26,7 @@ body {
   color: white;
   margin-left: 50px;
   text-decoration: none;
+  font-family: 'evangelion';
 }
 
 .header a:hover {
