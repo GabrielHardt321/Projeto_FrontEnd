@@ -318,7 +318,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:间-between; /* Mantém o conteúdo espalhado */
+    justify-content:间-between; /* Mantém o conteúdo espalhadoo */
     transition: 0.3s;
 }
 
@@ -374,7 +374,7 @@ body {
 
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* empilha */
+        flex-direction: column; /* empilhar */
         text-align: center;
         gap: 20px;
     }
