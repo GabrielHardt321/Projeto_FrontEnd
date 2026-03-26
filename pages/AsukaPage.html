@@ -1,12 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asuka</title>
+    <title>Asuka Langley Soryau</title>
+    <!-- Link para o CSS específico da Asuka -->
     <link rel="stylesheet" href="../css/pages/AsukaPage.css">
 </head>
+
 <body>
-    <h1>Pagina Não construida</h1>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="../assets/img/logoEvangelion.webp" alt="Home">
+    </a>
+    <div class="search-box">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Pesquisar Personagens..">
+            <img src="../assets/img/lupa.png" alt="Buscar">
+        </div>
+    </div>
+
+    <nav>
+        <a href="../pages/login.html">Login</a>
+        <a href="../pages/registro.html">Registro</a>
+    </nav>
+</header>
+
+<section class="banner asuka-banner">
+    <h2>Asuka Langley Soryu</h2>
+</section>
+
+<section class="conteudo">
+    <!--diretorio da imagem na pagina sobre o personagem-->
+    <img src="../assets/img/elevator.jpg" alt="Asuka Langley">
+
+    <p>
+        Asuka Langley Soryu é a "Segunda Criança" e prodígio designada para pilotar a Unidade Evangelion-02. 
+        Com uma personalidade forte, competitiva e MUITAS VEZES arrogante, ela esconde um passado traumático 
+        e uma busca incessante por reconhecimento e independência.
+    </p>
+</section>
+
+<section class="secao-comentarios">
+    <div class="container-form">
+        <h2 class="fonteEvangelion">Avaliação de Personagem</h2>
+        <p>Deixe sua nota e opinião sobre a nossa querida ruiva estressadinha na seção abaixo!.</p>
+        
+
+
+        <form action="#">   
+            <div class="campo">
+                <label for="nota">Que nota você dá para ela?</label>
+                <select id="nota" name="nota">
+                    <option value="10">PERSONAGEM DIVINO!!😍😇🙏</option>
+                    <option value="8">Muito boa😀👍</option>
+                    <option value="5">Mediana😒</option>
+                    <option value="2">Não gosto muito😑</option>
+                    <option value="0">QUERO CRUCIFICAR ESSE PERSONAGEM LIXO!!😡</option>
+                </select>
+            </div>
+
+
+
+            <div class="campo">
+                <label for="comentario">Seu comentário:</label>
+                <textarea id="comentario" rows="4" placeholder="Escreva o que você pensa sobre a personagem..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Avaliação!</button>
+        </form>
+    </div>
+</section>
+
+<section class="opinioes-usuarios">
+    <h2 class="fonteEvangelion">Últimas Avaliações</h2>
+    
+    <div class="lista-comentarios">
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>AsukaLover69&lt;3</strong>
+                <!--esse "&lt;3<" quer dizer q ele vaicolocar o simbolo "<" no print, OBS:deixar assim-->
+                <span class="nota-tag">Nota: 10</span>
+            </div>
+            <p>"MELHOR PERSONAGEM, amo a asuka, ela é linda e irritada igual a minha ex TEAMO ASUKA!!! melhor q ela só a dos filmes rebuild q inteligente e pistola🤤 "as" Asuka são omplexidade pura!"</p>
+        </div>
+
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>ReiFan_00</strong>
+                <span class="nota-tag">Nota: 5</span>
+            </div>
+            <p>"Muito barulhenta, prefiro o silêncio da Rei."</p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <p>Projeto Evangelion - 2026</p>
+</footer>
+
 </body>
 </html>

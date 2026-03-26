@@ -1,0 +1,241 @@
+/*importando a fonte do Evangelion B)aquela fonte lá*/
+@font-face {
+    font-family: 'evangelion';
+    src: url('../fonts/evangelion.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #111;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+}
+
+.header a {
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family: 'evangelion';
+}
+
+.header a:hover {
+    color: #ff4500; /*hover dos botões navbar*/
+    
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border: 2px solid #ff4500;
+    background-color: #000;
+}
+
+
+
+.search-box input {
+    width: 100%;
+    padding: 12px 60px 12px 15px;
+    background: transparent;
+    border: none;
+    color: #ff4500;
+    outline: none;
+}
+
+
+
+.search-box img {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    width: 40px;
+    background-color: #ff4500;
+    object-fit: contain;
+}
+
+/*BANNER ASUKA :P*/
+.asuka-banner {
+    position: relative;
+    height: 300px;
+    /*rlx q eu lembrei de mudar o fundo e td*/
+    background: url('../../assets/img/asuka_thumb.png') 50% 20%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: aparecer 2s;
+}
+
+
+.asuka-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.asuka-banner h2 {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    font-family: 'evangelion';
+    text-shadow: 2px 2px 10px #ff0000;
+}
+
+/*CONTEÚDO DA PAG DA PERSONAGEM*/
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 20px;
+    color: white;
+}
+
+.conteudo img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #ff4500; /* Sombra Laranja */
+    transition: 0.3s;
+}
+
+.conteudo img:hover {
+    transform: scale(1.1);
+}
+
+.conteudo p {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* --- FORMULÁRIO --- */
+.secao-comentarios {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    background: #000;
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #ff4500;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.4);
+}
+
+.container-form h2 {
+    color: #ff4500;
+    text-align: center;
+    font-family: 'evangelion';
+    animation: corTituloAsuka 3s infinite alternate;
+}
+
+@keyframes corTituloAsuka {
+    from { color: #ff4500; text-shadow: 0 0 5px #ff4500; }
+    to { color: #fff; text-shadow: 0 0 15px #ff0000; }
+}
+
+
+.container-form select, 
+.container-form textarea {
+    width: 100%;           
+    display: block;        
+    margin-bottom: 20px;  
+    padding: 12px;         
+    box-sizing: border-box; /*impede que o campo saia para fora da borda*/
+    background: #111;     
+    color: white;        
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+
+.container-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.btn-enviar:hover {
+    background: #ff0000;
+    transform: scale(1.02);
+}
+
+
+/*COMENTÁRIOS*/
+.opinioes-usuarios {
+    padding: 40px 20px;
+    background: #111;
+    color: white;
+}
+
+.card-comentario {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    border-left: 4px solid #ff4500;
+}
+
+.nota-tag {
+    background: #ff4500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*Responsividade né?!*/
+@media (max-width: 768px) {
+    .conteudo { flex-direction: column; text-align: center; }
+    .conteudo img { width: 80%; }
+}
