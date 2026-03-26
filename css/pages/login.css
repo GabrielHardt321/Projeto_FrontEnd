@@ -1,0 +1,107 @@
+
+.login-page {
+    background: url('../../assets/img/Wallpaper_Fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-wrapper {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    background: rgba(17, 17, 17, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid purple;
+    box-shadow: 0 0 30px rgba(128, 0, 128, 0.5);
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(5px);
+    animation: aparecer 1s ease-out;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-form h1 {
+    color: #a020f0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.login-form p {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #e85c04;
+}
+
+.campo input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: rgba(34, 34, 34, 0.8);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: purple;
+    box-shadow: 0 0 10px purple;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #a020f0;
+    box-shadow: 0 0 15px #a020f0;
+    transform: scale(1.02);
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login-footer a {
+    color: #a020f0;
+    text-decoration: none;
+}
