@@ -318,7 +318,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:间-between; /* Mantém o conteúdo espalhado */
+    justify-content:间-between; /* Mantém o conteúdo espalhadoo */
     transition: 0.3s;
 }
 
