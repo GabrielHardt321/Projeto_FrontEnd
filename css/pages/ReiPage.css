@@ -40,6 +40,53 @@ html {
   color: purple;
 }
 
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 20px;
+  overflow: hidden; 
+  border-radius: 20px;
+  border: 2px solid #a020f0;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 60px 12px 15px;
+  background-color: transparent;
+  border: none;
+  color: #a020f0;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: rgba(160, 32, 240, 0.7);
+}
+
+.search-box img {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  padding: 0px;
+  object-fit: contain;
+  transform: scale(1.5) translateX(-0px);
+  cursor: pointer;
+  background-color: #a020f0; 
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 15px rgba(160, 32, 240, 0.8);
+  border-color: #ff00ff;
+}
+
 
 @keyframes aparecer {
   from { opacity: 0; }
