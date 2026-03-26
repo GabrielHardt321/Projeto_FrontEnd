@@ -10,14 +10,13 @@ body {
     font-family: Arial;
     overflow-x: hidden;
     color: white;
-    background: linear-gradient(
-        to bottom,
-        #021e2e 0%,  
-        #022636 60%,  
-        #066969 100%   
-    );
+    background-image: url(/Projeto_FrontEnd/assets/img/rei_gif.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-color: #021e2e; 
     min-height: 100vh;
-    background-attachment: fixed;
 }
 
 .header {
@@ -109,8 +108,8 @@ html, body {
 .rei-banner {
     position: relative;
     width: 100%;
-    min-height: 250px;
-    height: 40vh;
+    min-height: 300px;
+    height: 60vh; 
     background: url('../../assets/img/rei_thumb.png') center top / cover no-repeat;
     display: flex;
     align-items: center;
@@ -118,6 +117,8 @@ html, body {
     overflow: hidden;
     animation: aparecer 2s;
     margin: 0;
+    padding: 20px;
+
 }
 
 .rei-banner::after {
@@ -171,9 +172,16 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
 }
 
 .conteudo p {
-  max-width: 500px;
-  font-size: 20px;
-  line-height: 1.6;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #1652a0;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+    word-wrap: break-word;
+
 }
 
 .descricaoRei {
@@ -191,15 +199,21 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
 }
 
 .descricaoRei p {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #1652a0;
     max-width: 500px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
-    text-align: left;
+    word-wrap: break-word;
 }
 
 .descricaoRei img {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 25px rgb(11, 77, 153);
     transition: 0.3s;
@@ -294,10 +308,15 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
 }
 
 .UltimasAvaliacoes {
+    background: rgba(20, 20, 20, 0.9);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #1652a0;
     text-align: center;
     width: 100%;
     display: block;
     margin: 40px 0 20px 0;
+    line-height: 1.6;   
 }
 
 .UltimasAvaliacoes h2 {
