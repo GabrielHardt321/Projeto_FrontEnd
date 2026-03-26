@@ -65,7 +65,7 @@ body {
 .card-header p {
   font-size: 13px;
   margin: 5px 0 0 0;
-  color: #888;
+  color: #e85c04;
   text-transform: uppercase;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .card:hover .card-header span {
-  color: #fff;
+  color: #b10018;
   text-shadow: 0 0 15px #e85c04;
 }
 
