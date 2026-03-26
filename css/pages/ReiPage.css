@@ -1,9 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    width: 100%;
-    min-width: 320px;
     overflow-x: hidden;
     color: white;
     background: linear-gradient(
@@ -17,16 +21,21 @@ body {
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: black;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    left: 0;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Garante que nada escape para o lado */
+}
 .header img {
   width: 120px;
   height: auto;
@@ -99,6 +108,7 @@ body {
 
 .rei-banner {
     position: relative;
+    width: 100%;
     min-height: 250px;
     height: 40vh;
     background: url('../../assets/img/rei_thumb.png') center top / cover no-repeat;
@@ -108,7 +118,6 @@ body {
     overflow: hidden;
     animation: aparecer 2s;
     margin: 0;
-    padding: 20px;
 }
 
 .rei-banner::after {
@@ -132,6 +141,11 @@ body {
     max-width: 900px;
 }
 
+.header, .rei-banner {
+    width: 100% !important;
+    left: 0;
+    right: 0;
+}
 section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentarios, .footer {
     max-width: 100%;
 }
@@ -281,8 +295,9 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
 
 .UltimasAvaliacoes {
     text-align: center;
-    margin: 40px 0;
     width: 100%;
+    display: block;
+    margin: 40px 0 20px 0;
 }
 
 .UltimasAvaliacoes h2 {
