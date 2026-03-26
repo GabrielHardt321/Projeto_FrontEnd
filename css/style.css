@@ -61,27 +61,31 @@ body {
 
 .card-overlay {
   position: absolute; 
+  top: -10%;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 20px;
   background: linear-gradient(transparent, rgba(128, 0, 128, 0.9)); 
-  color: white;
+  color: #e85c04;
   text-align: center;
   transform: translateY(20px); 
   transition: 0.5s;
-  opacity: 0.9;
+  /*opacity: 0.2;*/
 }
 
 .card-overlay span {
   font-size: 22px;
   display: block;
+  color: black;
+  opacity: 100%;
 }
 
 .card-overlay p {
   font-size: 14px;
-  margin-top: 5px;
-  color: #ddd;
+  margin-top: 315px;
+  color: #e85c04;
+  
 }
 
 .card:hover {
