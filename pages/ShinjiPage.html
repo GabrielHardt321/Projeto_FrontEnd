@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Shinji Ikari</title>
+
+    <link rel="stylesheet" href="../css/pages/ShinjiPage.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+      <img src="../assets/img/logoEvangelion.webp" alt="Home">
+    </a>
+    <div class="search-box">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Pesquisar Personagens..">
+            <img src="../assets/img/lupa.png" alt="Buscar">
+        </div>
+    </div>
+
+  <nav>
+    <a href="../pages/login.html">Login</a>
+    <a href="../pages/registro.html">Registro</a>
+
+  </nav>
+</header>
+
+<section class="banner shinji-banner">
+  <h2>Shinji Ikari</h2>
+</section>
+
+<section class="conteudo">
+  <img src="../assets/img/Shinji_doomer.jpg" alt="Shinji">
+
+  <p>
+    Shinji Ikari é o protagonista de Evangelion. Ele é um piloto do EVA-01 e enfrenta diversos conflitos emocionais ao longo da história.
+  </p>
+</section>
+
+<section class="secao-comentarios">
+    <div class="container-form">
+        <h2 class="fonteEvangelion">Avaliação de Personagem</h2>
+        <p>Deixe sua nota e sua opinião sobre o Shinji Ikari abaixo.</p>
+        
+        <form action="#">   
+            <div class="campo">
+                <label for="nota">Que nota você dá para ele?</label>
+                <select id="nota" name="nota">
+                    <option value="10">10 - Personagem Incrível</option>
+                    <option value="8">8 - Muito bom</option>
+                    <option value="5">5 - Mediano / Ok</option>
+                    <option value="2">2 - Não gosto muito</option>
+                    <option value="0">0 - Entre no robô, Shinji!</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="comentario">Seu comentário:</label>
+                <textarea id="comentario" rows="4" placeholder="Escreva o que você pensa sobre o personagem..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Postar Avaliação</button>
+        </form>
+    </div>
+</section>
+
+<section class="opinioes-usuarios">
+    <h2 class="fonteEvangelion">Últimas Avaliações</h2>
+    
+    <div class="lista-comentarios">
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>Roberto69</strong>
+                <span class="nota-tag">Nota: 0</span>
+            </div>
+            <p>"Baka Shinji! Eu te odeio!"</p>
+        </div>
+
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>AlfredoChad9999</strong>
+                <span class="nota-tag">Nota: 10</span>
+            </div>
+            <p>"Esse cara é magnifico."</p>
+        </div>
+
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>Roberto69</strong>
+                <span class="nota-tag">Nota: 0</span>
+            </div>
+            <p>"Baka Shinji! Eu te odeio!"</p>
+        </div>
+
+        <div class="card-comentario">
+            <div class="comentario-topo">
+                <strong>AlfredoChad9999</strong>
+                <span class="nota-tag">Nota: 10</span>
+            </div>
+            <p>"Esse cara é magnifico."</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <p>Projeto Evangelion - 2026</p>
+</footer>
+
+</body>
+</html>

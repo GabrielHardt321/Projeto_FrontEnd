@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #111;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.header img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 20px;
+  overflow: hidden; 
+  border-radius: 20px;
+  border: 2px solid #a020f0;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 60px 12px 15px;
+  background-color: transparent;
+  border: none;
+  color: #a020f0;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: rgba(160, 32, 240, 0.7);
+}
+
+.search-box img {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  padding: 0px;
+  object-fit: contain;
+  transform: scale(1.5) translateX(-0px);
+  cursor: pointer;
+  background-color: #a020f0; 
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 15px rgba(160, 32, 240, 0.8);
+  border-color: #ff00ff;
+}
+
+.header a {
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+  font-family: 'evangelion';
+}
+
+.header a:hover {
+  color: #a020f0;
+}
+
+.secaoPersonagens {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  animation: pulsarNeon 1.5s infinite alternate;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.3s ease;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-header span {
+  font-size: 20px;
+  display: block;
+  color: #e85c04;
+  font-family: 'evangelion';
+  text-shadow: 0 0 8px rgba(232, 92, 4, 0.4);
+}
+
+.card-header p {
+  font-size: 13px;
+  margin: 5px 0 0 0;
+  color: #e85c04;
+  text-transform: uppercase;
+}
+
+.card-img-wrapper {
+  position: relative;
+  height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #333;
+  transition: 0.4s;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-wrapper {
+  border-color: #a020f0;
+  box-shadow: 0 0 20px rgba(160, 32, 240, 0.6);
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.1) rotate(1deg);
+}
+
+.card:hover .card-header span {
+  color: #b10018;
+  text-shadow: 0 0 15px #e85c04;
+}
+
+/*o teste do hover para cada card* NA LINHA ABAIXO
+
+.card:hover .card-headerAsuka span {
+  color: #b10018;
+  text-shadow: 0 0 15px #e85c04;
+}
+
+não funcionou kkkkk, precisaria de mais tempo*/
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+
+
+
+@font-face {
+  font-family: 'evangelion';
+  src: url('../fonts/evangelion.otf') format('opentype');
+}
+
+.fonteEvangelion {
+  font-family: 'evangelion';
+}
+
+.banner {
+  position: relative;
+  height: 350px;
+  background: url('../assets/img/evangelion-unit-01-3840x2160-15699.png') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: aparecer 2s;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner h2 {
+  position: relative;
+  color: white;
+  font-size: 32px;
+  z-index: 1;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulsarNeon {
+  from { text-shadow: 0 0 10px #a020f0, 0 0 20px #a020f0; }
+  to { text-shadow: 0 0 20px #ff00ff, 0 0 30px #a020f0; }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  .header a {
+    margin-left: 15px;
+  }
+  .search-box {
+    max-width: 90%;
+    margin: 5px 0;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .banner h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

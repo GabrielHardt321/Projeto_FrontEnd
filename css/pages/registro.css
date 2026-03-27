@@ -1,0 +1,113 @@
+
+.registro-page {
+    background: url('../../assets/img/Wallpaper_Fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.registro-container {
+    background: rgba(15, 15, 15, 0.92);
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid purple;
+    box-shadow: 0 0 30px rgba(128, 0, 128, 0.4);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(8px);
+    animation: aparecer 0.8s ease-out;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.registro-form h1 {
+    color: #a020f0;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.registro-form p {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #e85c04;
+}
+
+.campo input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: rgba(30, 30, 30, 0.8);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #e85c04;
+    box-shadow: 0 0 10px rgba(232, 92, 4, 0.3);
+}
+
+.btn-registro {
+    width: 100%;
+    padding: 15px;
+    background: #e85c04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.btn-registro:hover {
+    background: #ff6a00;
+    box-shadow: 0 0 20px rgba(232, 92, 4, 0.5);
+    transform: translateY(-2px);
+}
+
+.registro-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.registro-footer a {
+    color: #a020f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-footer a:hover {
+    text-decoration: underline;
+}
