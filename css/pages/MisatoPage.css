@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -349,6 +356,7 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
 }
 
 .footer {
+    align-items: center;
     background: #0a0a0a;
     color: white;
     padding: 15px 20px; 
@@ -394,6 +402,9 @@ section, .conteudo, .descricaoRei, .header, .opinioes-usuarios, .secao-comentari
     font-size: 11px;
     text-align: center;
     color: #555;
+}
+.footer p{
+    align-items: center;
 }
 
 @media (max-width: 900px) {
