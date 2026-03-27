@@ -15,3 +15,11 @@ Adicionando uma fonte personalizavel e colocando uma imagem na barra de cima que
 colocando imagem dos personagem e colocando nos cards na pag inicial (teste para ver se fica maneiro)
 
 Kevin - fazendo minha parte e o site da Rei Ayanami, removendo algumas fotos que não vão ser usadas e deixando mais bonito
+
+Kevin - terminei o site da Rei
+
+Luiz Gabriel - terminou o site da Misato
+
+Gabriel - terminou o site do Shinji e fez a pag de login e registro
+
+Luiz Gustavo - terminou o site da Asuka
